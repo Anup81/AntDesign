@@ -4,18 +4,16 @@ import { Layout, Input } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 const { Header, Content, Footer } = Layout;
-const { Search } = Input;
+
+import { SearchOutlined } from "@ant-design/icons";
 
 const Navbar = () => {
   return (
     <Header className={styles.navbar}>
       <div className={styles.wrapper}>
         <div className={styles.search}>
-          <Search
-            placeholder="Search ..."
-            enterButton
-            className={styles.input}
-          />
+          <Input placeholder="Search..." className={styles.input} />
+          <SearchOutlined className={styles.icon} />
         </div>
 
         <div className={styles.items}>
