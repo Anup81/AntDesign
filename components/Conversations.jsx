@@ -12,7 +12,7 @@ const Conversations = () => {
         height="30px"
         alt=""
       />
-      <span className={styles.conversationName}>Name</span>
+      <span className={styles.conversationName}>Adrew Na</span>
     </div>
   );
 };
