@@ -94,7 +94,7 @@ const Sidebar = () => {
               </li>
             </Link>
 
-            <Link href="/" style={{ textDecoration: "none" }}>
+            <Link href="/main/weather" style={{ textDecoration: "none" }}>
               <li>
                 <CloudOutlined className={styles.icon} />
 
