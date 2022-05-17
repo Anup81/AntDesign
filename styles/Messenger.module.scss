@@ -4,15 +4,39 @@
 
     .chatMenu{
         flex: 3.5;
+
+        .chatMenuWrapper{
+            padding: 10px;
+            height: 100%;
+
+            .chatMenuInput {
+                width: 90%;
+                padding: 10px 2px;
+                border: none;
+                border-bottom: 1px solid gray;
+                outline: none;
+            }
+        }
+        
+        
     }
-    .chatMenuInput {
-        width: 90%;
-        padding: 10px 0;
-        border: none;
-        border-bottom: 1px solid gray;
-      }
+ 
       
       .chatBox {
         flex: 5.5;
+
+        .chatBoxWrapper{
+            padding: 10px;
+            height: 100%;
+        }
+      }
+
+      .chatOnline{
+          flex: 3;
+
+          .chatOnlineWrapper{
+            padding: 10px; 
+            height: 100%;
+        }
       }
 }
