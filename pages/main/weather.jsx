@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar";
 import { Layout } from "antd";
 import Breadcrumb from "../../components/Breadcrumb";
 import Searchbox from "../../components/weatherApp/Searchbox";
+import FamousPlaces from "../../components/weatherApp/FamousPlaces";
 const { Content } = Layout;
 
 const welcome = () => {
@@ -17,6 +18,7 @@ const welcome = () => {
         <Breadcrumb />
         <Content className={styles.counter}>
           <Searchbox />
+          <FamousPlaces />
         </Content>
       </div>
     </div>
