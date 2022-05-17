@@ -1,11 +1,52 @@
 import React from "react";
 import styles from "../styles/Navbar.module.scss";
-import { Layout, Input } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-const { Header, Content, Footer } = Layout;
+import { Layout, Input, Menu, Dropdown, Button, Space } from "antd";
+
+const { Header, Content, Footer, Sider } = Layout;
 
 import { SearchOutlined } from "@ant-design/icons";
+
+const menu = (
+  <Menu
+    items={[
+      {
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.antgroup.com"
+          >
+            Profile
+          </a>
+        ),
+      },
+      {
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.aliyun.com"
+          >
+            Settings
+          </a>
+        ),
+      },
+      {
+        label: (
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.luohanacademy.com"
+          >
+            Logout
+          </a>
+        ),
+      },
+    ]}
+  />
+);
 
 const Navbar = () => {
   return (
@@ -19,7 +60,7 @@ const Navbar = () => {
         <div className={styles.items}>
           <div className={styles.item}>
             <Link
-              href="/"
+              href="/main/welcome"
               style={{ textDecoration: "none" }}
               className={styles.item}
             >
@@ -48,13 +89,15 @@ const Navbar = () => {
           </div>
 
           <div className={styles.item}>
-            <Image
-              src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500j"
-              alt=""
-              width="30px"
-              height="30px"
-              className={styles.avatar}
-            />
+            <Dropdown overlay={menu} placement="bottomLeft">
+              <Image
+                src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500j"
+                alt=""
+                width="30px"
+                height="30px"
+                className={styles.avatar}
+              />
+            </Dropdown>
           </div>
         </div>
       </div>
