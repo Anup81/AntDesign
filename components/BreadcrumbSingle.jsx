@@ -21,12 +21,7 @@ const BreadcrumbComp = () => {
             <HomeOutlined />
           </Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>
-          {/* <Link href="/"> */}
-          <a>{path[2]}</a>
-          {/* </Link> */}
-        </Breadcrumb.Item>
-        {/* <Breadcrumb.Item>{path[1] + " / " + path[2]}</Breadcrumb.Item> */}
+        <Breadcrumb.Item>{path}</Breadcrumb.Item>
       </Breadcrumb>
     </div>
   );

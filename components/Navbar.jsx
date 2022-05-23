@@ -13,11 +13,7 @@ const menu = (
     items={[
       {
         label: (
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.antgroup.com"
-          >
+          <a rel="noopener noreferrer" href="/main/profile">
             Profile
           </a>
         ),
@@ -60,7 +56,7 @@ const Navbar = () => {
         <div className={styles.items}>
           <div className={styles.item}>
             <Link
-              href="/main/welcome"
+              href="/"
               style={{ textDecoration: "none" }}
               className={styles.item}
             >

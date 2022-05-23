@@ -33,7 +33,7 @@ const Sidebar = () => {
         <div className={styles.center}>
           <ul>
             <p className={styles.title}>LIST</p>
-            <Link href="/main/welcome" style={{ textDecoration: "none" }}>
+            <Link href="/" style={{ textDecoration: "none" }}>
               <li>
                 <HomeOutlined className={styles.icon} />
                 <span> Home</span>
@@ -73,7 +73,7 @@ const Sidebar = () => {
               </li>
             </Link>
 
-            <Link href="/" style={{ textDecoration: "none" }}>
+            <Link href="/main/music" style={{ textDecoration: "none" }}>
               <li>
                 <SoundOutlined className={styles.icon} />
                 <span>Music Player</span>
